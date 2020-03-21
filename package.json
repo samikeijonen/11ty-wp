@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "@foxland/stylelint-config": "^1.2.0",
+    "axios": "^0.19.2",
     "luxon": "^1.22.0",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.1",

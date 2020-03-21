@@ -1,0 +1,9 @@
+{% extends "layouts/base.njk" %}
+
+{% block pageTitle %}
+	<h1 class="entry__title">{{ title }}</h1>
+{% endblock %}
+
+{% block content %}
+	{{ content | safe }}
+{% endblock %}

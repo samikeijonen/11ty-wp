@@ -1,15 +1,15 @@
 <!doctype html>
-<html lang="fi">
+<html lang="en-US">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		{% bundledCss %}
-		<title>{{ title or site.title }}</title>
+		<title>{{ title }} - {{ site.title }}</title>
 	</head>
 	<body>
 		<div class="site mx-auto max-w-2xl">
 			<header class="site-header px-2 mx-auto max-w-xl py-4">
-				<a class="skip-link screen-reader-text" href="#main">Siirry sisältöön</a>
+				<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
 
 				{% include "components/nav.njk" %}
 			</header>
@@ -18,12 +18,15 @@
 				<article class="entry">
 					<header class="entry__header has-text-align-center mx-auto max-w-lg">
 						{% block byline %}
-  						{% endblock byline %}
-						<h1 class="entry__title">{{ title }}</h1>
+						{% endblock byline %}
+
+						{% block pageTitle %}
+						{% endblock pageTitle %}
 					</header>
 
 					<div class="entry__content flow-spacing">
-						{{ content | safe }}
+						{% block content %}
+						{% endblock %}
 					</div>
 				</article>
 			</main>

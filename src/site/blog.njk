@@ -1,0 +1,29 @@
+---
+title: Blog
+layout: layouts/page.njk
+pagination:
+  data: posts
+  size: 15
+---
+
+{% block content %}
+	<ul>
+		{%- for post in posts -%}
+			<li>
+				<a href="/blog/{{ post.slug }}" class="postlist-link">{% if post.title.rendered %}{{ post.title.rendered }}{% else %}{{ post.slug }}{% endif %}</a>
+			</li>
+		{%- endfor -%}
+	</ul>
+
+	{% if pagination.pages.length > 1 %}
+		<nav class="pagination" aria-label="Newer and older articles">
+			<ol class="pagination__items reset-list">
+				{%- for pageEntry in pagination.pages %}
+					<li class="pagination__item">
+						<a class="pagination__anchor" href="{{ pagination.hrefs[ loop.index - 1 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>Sivu {{ loop.index }}</a>
+					</li>
+				{%- endfor %}
+			</ol>
+		</nav>
+	{% endif %}
+{% endblock %}

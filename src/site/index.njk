@@ -1,28 +1,8 @@
 ---
-title: Pohjois-Karjalan Sotaorvot ry
-layout: base
+title: Testing Eleventy using WP as back-end
+layout: layouts/page.njk
 ---
 
-<p>Tervetuloa Pohjois-Karjalan sotaorpojen kotisivuille. Täältä löydät meidän <a href="{{ '/hallitus/' | url }}">hallituksen</a>.
-Voit myös tutustua tarkemmin <a href="{{ '/jasenkirjeet/' | url }}">jäsenkirjeisiin</a> ja <a href="{{ '/toimintakertomukset/' | url }}">toimintakertomuksiin</a>.</p>
-
-<blockquote class="flow-spacing">
-	<p>
-	Olkoon hyvä enkelisi</br>
-	vierelläsi tässä,</br>
-	uuden päivän alkaessa</br>
-	läsnä elämässä.
-	</p>
-	<p>
-	Olkoon hyvä enkelisi</br>
-	silloin lähelläsi,</br>
-	kun on poissa ystäväsi,</br>
-	poissa rakkain käsi.</br>
-	</p>
-	<p>
-	Olkoon hyvä enkelisi</br>
-	pimeässä suoja,</br>
-	kulkuasi johdattakoon</br>
-	taivaan valontuoja.</br>
-	</p>
-</blockquote>
+{% block content %}
+	<p>Test.</p>
+{% endblock %}

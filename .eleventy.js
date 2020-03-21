@@ -14,7 +14,7 @@ const manifest = isDev
 
 module.exports = function(eleventyConfig) {
   // Layout aliases make templates more portable.
-  eleventyConfig.addLayoutAlias("default", "layouts/default.njk");
+  eleventyConfig.addLayoutAlias("base", "layouts/base.njk");
 
   // Adds a universal shortcode to embed bundled CSS. In Nunjack templates: {% bundledCss %}
   eleventyConfig.addShortcode("bundledCss", function() {
@@ -32,13 +32,13 @@ module.exports = function(eleventyConfig) {
 
 	// Readable date.
 	eleventyConfig.addFilter("readableDate", dateObj => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd.L.yyyy");
+    return DateTime.fromISO(dateObj, {zone: 'utc'}).toFormat("LLLL d, yyyy");
   });
 
 	// Valid date string.
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+    return DateTime.fromISO(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
   });
 
   // Copy all images directly to dist.
@@ -46,9 +46,6 @@ module.exports = function(eleventyConfig) {
 
   // Copy all fonts directly to dist.
 	eleventyConfig.addPassthroughCopy({ "src/fonts": "fonts" });
-
-  // Copy all files directly to dist.
-  eleventyConfig.addPassthroughCopy({ "src/files": "files" });
 
   // Copy external dependencies to dist.
   eleventyConfig.addPassthroughCopy({ "src/vendor": "vendor" });
