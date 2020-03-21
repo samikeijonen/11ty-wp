@@ -1,16 +1,16 @@
 pre,
 .wp-block-code {
-	background-color: var(--color-grey-100);
-	font-family: var(--font-family-mono);
-	margin: 0 0 var(--spacing-4x);
+	background-color: var(--color-primary-100);
+	font-family: $font-pre;
+	margin: 0 0 var(--spacing4x);
 	max-width: 100%;
 	overflow: auto;
-	padding: var(--spacing-4x);
+	padding: var(--spacing4x);
 }
 
 code,
 kbd,
 tt,
 var {
-	font-family: var(--font-family-mono);
+	font-family: var(--font-code);
 }

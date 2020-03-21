@@ -1,0 +1,30 @@
+.wp-block-latest-posts,
+.wp-block-rss {
+	&.is-grid {
+		list-style-type: none;
+		padding-left: 0;
+
+		li {
+			margin-bottom: var(--spacing3x);
+		}
+
+		@supports (grid-area: auto) {
+			display: grid;
+			grid-gap: var(--spacing3x);
+			grid-template-columns: repeat(auto-fill, minmax(calc(var(--spacing-) * 34), 1fr));
+
+			li {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__post-date {
+		display: block;
+	}
+
+	&__item-excerpt {
+		margin-bottom: var(--spacing3x);
+		margin-top: var(--spacing3x);
+	}
+}

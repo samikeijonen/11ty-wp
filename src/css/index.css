@@ -54,6 +54,30 @@
 
 
 /*--------------------------------------------------------------
+# Blocks - WordPress block specific UI components.
+--------------------------------------------------------------*/
+@import "blocks/core/audio.css";
+@import "blocks/core/button.css";
+@import "blocks/core/columns.css";
+@import "blocks/core/cover.css";
+@import "blocks/core/embeds.css";
+@import "blocks/core/file.css";
+@import "blocks/core/gallery.css";
+@import "blocks/core/group.css";
+@import "blocks/core/latest-comments.css";
+@import "blocks/core/latest-posts.css";
+@import "blocks/core/media-text.css";
+@import "blocks/core/navigation.css";
+@import "blocks/core/paragraph.css";
+@import "blocks/core/pullquote.css";
+@import "blocks/core/quote.css";
+@import "blocks/core/search.css";
+@import "blocks/core/separator.css";
+@import "blocks/core/social-links.css";
+@import "blocks/core/table.css";
+
+
+/*--------------------------------------------------------------
 # Components - specific UI components.
 --------------------------------------------------------------*/
 @import "components/archive.css";

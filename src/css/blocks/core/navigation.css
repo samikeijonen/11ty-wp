@@ -1,0 +1,30 @@
+.wp-block-navigation__container {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+.wp-block-navigation-link {
+	margin-right: var(--spacing3x);
+}
+
+.wp-block-navigation-link:last-child {
+	margin-right: 0;
+}
+
+.wp-block-navigation-link__content {
+	color: var(--color-grey-60);
+	display: block;
+	font-size: var(--font-size-1);
+	font-weight: 700;
+	padding-bottom: var(--spacing-);
+	padding-top: var(--spacing-);
+	text-decoration: none;
+
+	&.is-active {
+		color: var(--color-primary-900);
+	}
+}

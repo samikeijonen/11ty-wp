@@ -1,0 +1,16 @@
+.wp-block-table {
+	&.has-fixed-layout {
+		table-layout: fixed;
+	}
+
+	&.is-style-stripes {
+		tr:nth-child(even) {
+			background-color: var(--color-primary-100);
+		}
+
+		th,
+		td {
+			border-bottom: 0;
+		}
+	}
+}

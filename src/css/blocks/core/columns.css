@@ -1,0 +1,31 @@
+.wp-block-columns,
+.wp-block-text-columns {
+	margin-bottom: var(--spacing4x);
+
+	.wp-block-column {
+		margin: 0;
+		width: auto;
+
+		:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	@supports (grid-area: auto) {
+		@media (--breakpoint-1) {
+			display: grid;
+			grid-gap: var(--spacing4x);
+			grid-template-columns: repeat(2, 1fr);
+
+			&.has-3-columns,
+			&.columns-3 {
+				grid-template-columns: repeat(3, 1fr);
+			}
+
+			&.has-4-columns,
+			&.columns-4 {
+				grid-template-columns: repeat(4, 1fr);
+			}
+		}
+	}
+}

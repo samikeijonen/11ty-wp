@@ -14,13 +14,18 @@ img {
 }
 
 figure {
-	margin: 0 0 var(--spacing-4x);
+	margin: 0 0 var(--spacing4x);
+
+	img {
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 figcaption {
-	color: var(--color-grey-500);
-	font-size: var(--font-size-md);
-	margin: var(--spacing-2x) auto;
-	max-width: var(--max-w-md);
+	color: var(--color-grey-60);
+	font-size: var(--font-size-1);
+	margin: var(--spacing2x) auto;
+	max-width: var(--max-width-2);
 	text-align: center;
 }

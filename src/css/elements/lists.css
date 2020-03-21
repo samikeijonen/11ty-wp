@@ -1,7 +1,7 @@
 ul,
 ol {
-	margin: 0 0 var(--spacing-4x) var(--spacing-2x);
-	padding: 0 0 0 var(--spacing-3x);
+	margin: 0 0 var(--spacing4x) var(--spacing2x);
+	padding: 0 0 0 var(--spacing3x);
 }
 
 ul {
@@ -14,17 +14,12 @@ ol {
 
 li > {
 
-	& ul,
-	& ol {
+	ul,
+	ol {
 		margin-bottom: 0;
-		margin-left: var(--spacing-2x);
-		padding-left: var(--spacing-2x);
+		margin-left: var(--spacing2x);
+		padding-left: var(--spacing2x);
 	}
-}
-
-ul li,
-ol li {
-	margin-top: var(--spacing);
 }
 
 dt {
@@ -32,5 +27,5 @@ dt {
 }
 
 dd {
-	margin: 0 var(--spacing-4x) var(--spacing-4x);
+	margin: 0 var(--spacing4x) var(--spacing4x);
 }

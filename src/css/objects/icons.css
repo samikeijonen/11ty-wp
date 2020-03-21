@@ -1,0 +1,10 @@
+.svg,
+.wp-social-link svg {
+	display: inline-block;
+	fill: currentColor;
+	height: 1em;
+	position: relative;
+	top: -0.0625em;
+	vertical-align: middle;
+	width: 1em;
+}

@@ -1,7 +1,7 @@
 textarea {
 	/* Removes empty space under textarea. */
 	display: block;
-	min-height: calc(var(--spacing-) * 13);
+	min-height: calc(var(--spacing) * 13);
 }
 
 input,
@@ -23,14 +23,13 @@ input[type="color"],
 textarea,
 select {
 	background-color: var(--color-white);
-	border: 2px solid var(--color-grey-500);
+	border: 2px solid var(--color-primary);
 	border-radius: 0;
-	padding: var(--spacing);
+	padding: var(--spacing-);
 	width: 100%;
 
 	&:focus {
-		border-color: var(--color-primary);
-		box-shadow: 0 0 var(--spacing-sm) var(--color-primary-shadow);
+		box-shadow: 0 0 4px var(--color-primary-shadow);
 		/* Use transparent outline for Windows high contrast mode. */
 		outline: 2px solid transparent;
 	}

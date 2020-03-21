@@ -1,0 +1,18 @@
+.wp-block-latest-comments {
+	list-style-type: none;
+	padding-left: 0;
+
+	&__comment {
+		margin-bottom: var(--spacing4x);
+	}
+
+	&__comment-meta {
+		font-size: var(--font-size-1);
+		margin-bottom: var(--spacing2x);
+		margin-top: var(--spacing-);
+	}
+
+	&__comment-date {
+		display: block;
+	}
+}

@@ -1,15 +1,15 @@
 cite {
-	color: var(--color-grey-500);
+	color: var(--color-grey-60);
 }
 
 blockquote {
 	border-left: 0.25rem solid;
 	font-style: italic;
-	margin: 0 0 var(--spacing-4x);
-	padding-left: var(--spacing-3x);
+	margin: 0 0 var(--spacing4x);
+	padding-left: var(--spacing3x);
 
 	p {
-		font-size: var(--font-size-xl);
+		font-size: var(--font-size-h3);
 	}
 
 	p:last-of-type {

@@ -8,7 +8,7 @@ input,
 optgroup,
 select,
 textarea {
-	color: var(--color-grey-700);
+	color: var(--color-primary-900);
 	font-family: var(--font-family-sans);
 	font-size: var(--font-size-body);
 	line-height: var(--line-height-md);
@@ -16,5 +16,5 @@ textarea {
 }
 
 body {
-	background-color: var(--color-grey-100);
+	background-color: var(--color-primary-100);
 }

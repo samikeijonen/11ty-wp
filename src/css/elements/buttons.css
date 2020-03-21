@@ -3,18 +3,19 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	background-color: var(--color-primary);
-	border: none;
+	border: 2px solid transparent;
 	border-radius: 0;
 	color: var(--color-white);
-	font-weight: 500;
-	letter-spacing: var(--letter-spacing-md);
-	padding: calc(var(--spacing) * 1.5) calc(var(--spacing-2x) * 1.25);
-	text-transform: uppercase;
+	display: inline-block;
+	font-weight: 700;
+	padding: calc(var(--spacing-) * 1.5) calc(var(--spacing2x) * 1.25);
+	text-decoration: none;
+	transition: all var(--transition-duration-1) ease-in-out;
 
 	&:hover,
 	&:active,
 	&:focus {
-		background-color: var(--color-primary-700);
+		background-color: var(--color-primary-900);
 		color: var(--color-white);
 		outline-offset: -2px;
 	}

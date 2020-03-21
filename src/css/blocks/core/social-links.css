@@ -1,0 +1,31 @@
+.wp-block-social-links {
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+	padding-left: 0;
+
+	&.aligncenter {
+		display: flex;
+		justify-content: center;
+	}
+
+	&.alignright {
+		justify-content: flex-end;
+	}
+}
+
+.wp-social-link a {
+	color: var(--color-primary-900);
+	padding: var(--spacing-);
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: var(--color-grey-60);
+	}
+}
+
+.wp-social-link svg {
+	height: 2em;
+	width: 2em;
+}

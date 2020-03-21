@@ -19,17 +19,16 @@
 }
 
 .nav__anchor {
+	color: var(--color-primary-900);
 	font-size: var(--font-size-md);
 	font-weight: 500;
-	letter-spacing: var(--letter-spacing-md);
 	padding-bottom: var(--spacing);
 	padding-top: var(--spacing);
 	position: relative;
 	text-decoration: none;
-	text-transform: uppercase;
 
 	&::after {
-		background-color: var(--color-primary-900);
+		background-color: var(--color-primary);
 		bottom: -2px;
 		content: "";
 		display: block;
@@ -43,7 +42,7 @@
 	&:active,
 	&:focus,
 	&[aria-current="page"] {
-		color: var(--color-primary-900);
+		color: var(--color-primary);
 
 		&::after {
 			width: 100%;

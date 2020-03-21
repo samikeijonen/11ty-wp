@@ -1,0 +1,22 @@
+.wp-block-quote__citation,
+.wp-block-pullquote__citation,
+.wp-block-quote cite,
+.wp-block-pullquote cite {
+	color: var(--color-grey-60);
+	font-size: inherit;
+	margin-top: var(--spacing3x);
+}
+
+.wp-block-quote.is-style-large p {
+	font-size: var(--font-size-h2);
+}
+
+.wp-block-pullquote.is-style-solid-color {
+	border-bottom: 0;
+	border-top: 0;
+
+	cite,
+	.wp-block-pullquote__citation {
+		color: inherit;
+	}
+}
