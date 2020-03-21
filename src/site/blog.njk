@@ -8,7 +8,7 @@ pagination:
 
 {% block content %}
 	<ul>
-		{%- for post in posts -%}
+		{%- for post in pagination.items -%}
 			<li>
 				<a href="/blog/{{ post.slug }}" class="postlist-link">{% if post.title.rendered %}{{ post.title.rendered }}{% else %}{{ post.slug }}{% endif %}</a>
 			</li>
