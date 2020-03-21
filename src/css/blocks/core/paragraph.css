@@ -5,7 +5,7 @@
 		font-size: var(--font-size-h1);
 		font-style: normal;
 		font-weight: 600;
-		margin-right: var(--spacing2x);
+		margin-right: var(--spacing-2x);
 		text-transform: uppercase;
 	}
 }
@@ -20,5 +20,5 @@
 .is-style-highlight,
 .is-style-highlight.wp-block-paragraph {
 	background-color: var(--color-primary-100);
-	padding: var(--spacing3x);
+	padding: var(--spacing-3x);
 }

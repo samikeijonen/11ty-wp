@@ -4,7 +4,7 @@
 .wp-block-pullquote cite {
 	color: var(--color-grey-60);
 	font-size: inherit;
-	margin-top: var(--spacing3x);
+	margin-top: var(--spacing-3x);
 }
 
 .wp-block-quote.is-style-large p {

@@ -16,7 +16,7 @@
 
 		.grid {
 			display: grid;
-			grid-gap: calc(var(--spacing2x) * 4);
+			grid-gap: calc(var(--spacing-2x) * 4);
 			grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
 
 			&--blog {

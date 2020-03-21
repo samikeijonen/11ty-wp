@@ -6,7 +6,7 @@ i {
 }
 
 address {
-	margin: 0 0 var(--spacing4x);
+	margin: 0 0 var(--spacing-4x);
 }
 
 abbr,

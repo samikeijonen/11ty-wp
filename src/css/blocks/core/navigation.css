@@ -8,7 +8,7 @@
 }
 
 .wp-block-navigation-link {
-	margin-right: var(--spacing3x);
+	margin-right: var(--spacing-3x);
 }
 
 .wp-block-navigation-link:last-child {

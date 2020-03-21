@@ -1,5 +1,5 @@
 .wp-block-file {
-	margin-bottom: var(--spacing4x);
+	margin-bottom: var(--spacing-4x);
 
 	&__button {
 		background-color: var(--color-primary);

@@ -3,12 +3,12 @@
 	padding-left: 0;
 
 	&__comment {
-		margin-bottom: var(--spacing4x);
+		margin-bottom: var(--spacing-4x);
 	}
 
 	&__comment-meta {
 		font-size: var(--font-size-1);
-		margin-bottom: var(--spacing2x);
+		margin-bottom: var(--spacing-2x);
 		margin-top: var(--spacing-);
 	}
 

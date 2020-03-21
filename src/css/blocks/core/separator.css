@@ -4,7 +4,7 @@
 	height: var(--spacingsmall);
 	margin-bottom: calc(var(--spacing-) * 8);
 	margin-top: calc(var(--spacing-) * 8);
-	max-width: calc(var(--spacing2x) * 13);
+	max-width: calc(var(--spacing-2x) * 13);
 
 	&.is-style-wide {
 		max-width: var(--max-width-2);
@@ -22,8 +22,8 @@
 			content: "\00b7 \00b7 \00b7";
 			font-family: serif;
 			font-size: calc(var(--global-baseline) * 3);
-			letter-spacing: var(--spacing4x);
-			padding-left: var(--spacing4x);
+			letter-spacing: var(--spacing-4x);
+			padding-left: var(--spacing-4x);
 		}
 	}
 }

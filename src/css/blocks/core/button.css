@@ -24,8 +24,8 @@
 }
 
 .wp-block-buttons .wp-block-button {
-	margin-right: var(--spacing4x);
-	margin-top: var(--spacing3x);
+	margin-right: var(--spacing-4x);
+	margin-top: var(--spacing-3x);
 }
 
 .wp-block-buttons .wp-block-button:last-child {

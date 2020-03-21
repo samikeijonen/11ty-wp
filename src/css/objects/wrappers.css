@@ -26,26 +26,26 @@
 }
 
 .px-2 {
-	padding-left: var(--spacing2x);
-	padding-right: var(--spacing2x);
+	padding-left: var(--spacing-2x);
+	padding-right: var(--spacing-2x);
 }
 
 .px-3 {
-	padding-left: var(--spacing3x);
-	padding-right: var(--spacing3x);
+	padding-left: var(--spacing-3x);
+	padding-right: var(--spacing-3x);
 }
 
 .py-4 {
-	padding-bottom: var(--spacing4x);
-	padding-top: var(--spacing4x);
+	padding-bottom: var(--spacing-4x);
+	padding-top: var(--spacing-4x);
 }
 
 .pb-2 {
-	padding-bottom: var(--spacing2x);
+	padding-bottom: var(--spacing-2x);
 }
 
 .pb-4 {
-	padding-bottom: var(--spacing4x);
+	padding-bottom: var(--spacing-4x);
 }
 
 .mb-0 {
@@ -53,5 +53,5 @@
 }
 
 .mb-2 {
-	margin-bottom: var(--spacing2x);
+	margin-bottom: var(--spacing-2x);
 }

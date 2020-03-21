@@ -19,5 +19,5 @@
 .entry__content > h4 + p,
 .entry__content > h5 + p,
 .entry__content > h6 + p {
-	--flow-space: var(--spacing3x);
+	--flow-space: var(--spacing-3x);
 }

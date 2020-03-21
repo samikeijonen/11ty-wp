@@ -2,10 +2,10 @@ pre,
 .wp-block-code {
 	background-color: var(--color-primary-100);
 	font-family: $font-pre;
-	margin: 0 0 var(--spacing4x);
+	margin: 0 0 var(--spacing-4x);
 	max-width: 100%;
 	overflow: auto;
-	padding: var(--spacing4x);
+	padding: var(--spacing-4x);
 }
 
 code,

@@ -3,9 +3,9 @@
 	background-size: cover;
 	display: flex;
 	justify-content: center;
-	margin-bottom: var(--spacing4x);
+	margin-bottom: var(--spacing-4x);
 	min-height: calc(var(--spacing) * 60);
-	padding: var(--spacing2x);
+	padding: var(--spacing-2x);
 	position: relative;
 
 	&-text,

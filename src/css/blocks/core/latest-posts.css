@@ -5,12 +5,12 @@
 		padding-left: 0;
 
 		li {
-			margin-bottom: var(--spacing3x);
+			margin-bottom: var(--spacing-3x);
 		}
 
 		@supports (grid-area: auto) {
 			display: grid;
-			grid-gap: var(--spacing3x);
+			grid-gap: var(--spacing-3x);
 			grid-template-columns: repeat(auto-fill, minmax(calc(var(--spacing-) * 34), 1fr));
 
 			li {
@@ -24,7 +24,7 @@
 	}
 
 	&__item-excerpt {
-		margin-bottom: var(--spacing3x);
-		margin-top: var(--spacing3x);
+		margin-bottom: var(--spacing-3x);
+		margin-top: var(--spacing-3x);
 	}
 }

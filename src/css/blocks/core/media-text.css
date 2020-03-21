@@ -1,12 +1,12 @@
 .wp-block-media-text,
 .wp-block-media-text.aligncenter {
 	display: grid;
-	margin-bottom: var(--spacing4x);
+	margin-bottom: var(--spacing-4x);
 }
 
 .wp-block-media-text {
 	align-items: center;
-	grid-gap: var(--spacing4x);
+	grid-gap: var(--spacing-4x);
 }
 
 .wp-block-media-text__media {
@@ -36,7 +36,7 @@
 	@media (--breakpoint-2) {
 		.wp-block-media-text.alignfull {
 			grid-template-areas: "media-text-start media-text-media media-text-content media-text-end";
-			grid-template-columns: auto minmax(0, calc(var(--max-width-wide) / 2 - var(--spacing2x))) minmax(0, calc(var(--max-width-wide) / 2 - var(--spacing2x))) auto;
+			grid-template-columns: auto minmax(0, calc(var(--max-width-wide) / 2 - var(--spacing-2x))) minmax(0, calc(var(--max-width-wide) / 2 - var(--spacing-2x))) auto;
 		}
 	}
 }
