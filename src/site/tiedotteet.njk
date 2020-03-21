@@ -1,0 +1,29 @@
+---
+title: Tiedotteet
+layout: layouts/base.njk
+pagination:
+  data: collections.tiedotteet
+  size: 15
+  reverse: true
+  alias: posts
+---
+
+<ul>
+	{%- for post in posts -%}
+		<li>
+			<a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+		</li>
+	{%- endfor -%}
+</ul>
+
+{% if pagination.pages.length > 1 %}
+	<nav class="pagination" aria-label="Uudemmat ja vanhemmat tiedotteet">
+		<ol class="pagination__items reset-list">
+			{%- for pageEntry in pagination.pages %}
+				<li class="pagination__item">
+					<a class="pagination__anchor" href="{{ pagination.hrefs[ loop.index - 1 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>Sivu {{ loop.index }}</a>
+				</li>
+			{%- endfor %}
+		</ol>
+	</nav>
+{% endif %}

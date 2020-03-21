@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fi">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		{% bundledCss %}
+		<title>{{ title or site.title }}</title>
+	</head>
+	<body>
+		<div class="site mx-auto max-w-2xl">
+			<header class="site-header px-2 mx-auto max-w-xl py-4">
+				<a class="skip-link screen-reader-text" href="#main">Siirry sisältöön</a>
+
+				{% include "components/nav.njk" %}
+			</header>
+
+			<main id="main" class="site-main px-2 py-8 mx-auto max-w-xl has-white-background-color">
+				<article class="entry">
+					<header class="entry__header has-text-align-center mx-auto max-w-lg">
+						{% block byline %}
+  						{% endblock byline %}
+						<h1 class="entry__title">{{ title }}</h1>
+					</header>
+
+					<div class="entry__content flow-spacing">
+						{{ content | safe }}
+					</div>
+				</article>
+			</main>
+
+			<footer class="site-footer px-2 mx-auto max-w-xl py-4">
+				{% include "components/nav-footer.njk" %}
+			</footer>
+
+			{% bundledJs %}
+		</div>
+	</body>
+</html>

@@ -1,0 +1,12 @@
+@supports (grid-area: auto) {
+	.grid {
+		display: grid;
+		grid-gap: var(--spacing-7x);
+		grid-template-columns: 1fr;
+
+		@media (--screen-md) {
+			grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+		}
+	}
+}
+

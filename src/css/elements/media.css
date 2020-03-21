@@ -1,0 +1,26 @@
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/* Make sure images are scaled correctly. */
+img {
+	height: auto;
+	max-width: 100%;
+	/* Removes the whitespace under img, safer than `display: block;`. */
+	vertical-align: middle;
+}
+
+figure {
+	margin: 0 0 var(--spacing-4x);
+}
+
+figcaption {
+	color: var(--color-grey-500);
+	font-size: var(--font-size-md);
+	margin: var(--spacing-2x) auto;
+	max-width: var(--max-w-md);
+	text-align: center;
+}

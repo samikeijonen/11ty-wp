@@ -1,0 +1,6 @@
+:root {
+	--max-w-md: 42rem;
+	--max-w-lg: 60rem;
+	--max-w-xl: 78rem;
+	--max-w-2xl: 120rem;
+}

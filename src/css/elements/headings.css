@@ -1,0 +1,48 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--color-primary-900);
+	font-family: var(--font-family-serif);
+	margin: 0 0 var(--spacing-2x);
+}
+
+h1,
+.h1,
+h1.wp-block-heading {
+	font-size: var(--font-size-3xl);
+	line-height: var(--line-height-sm);
+}
+
+h2,
+.h2,
+h2.wp-block-heading {
+	font-size: var(--font-size-2xl);
+	line-height: var(--line-height-sm);
+}
+
+h3,
+.h3,
+.wp-block-heading h3.editor-rich-text__tinymce {
+	font-size: var(--font-size-xl);
+}
+
+h4,
+.h4,
+.wp-block-heading h4.editor-rich-text__tinymce {
+	font-size: var(--font-size-lg);
+}
+
+h5,
+.h5,
+.wp-block-heading h5.editor-rich-text__tinymce {
+	font-size: var(--font-size-lg);
+}
+
+h6,
+.h6,
+.wp-block-heading h6.editor-rich-text__tinymce {
+	font-size: var(--font-size-lg);
+}

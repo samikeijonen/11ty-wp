@@ -1,0 +1,20 @@
+:root {
+	--primary-hue: 335;
+	--color-primary-hsl: var(--primary-hue), 82%, 35%;
+	--color-primary: hsl(var(--color-primary-hsl));
+	--color-primary-100: hsl(var(--primary-hue), 20%, 98%);
+	--color-primary-500: var(--color-primary);
+	--color-primary-700: hsl(var(--primary-hue), 3%, 27%);
+	--color-primary-900: hsl(var(--primary-hue), 82%, 7%);
+
+	--color-grey: hsl(0, 0%, 44%);
+	--color-grey-100: hsl(0, 0%, 93%);
+	--color-grey-300: hsl(0, 0%, 75%);
+	--color-grey-500: var(--color-grey);
+	--color-grey-700: hsl(0, 0%, 29%);
+
+	--color-white: hsl(0, 0%, 100%);
+	--color-black: hsl(0, 0%, 0%);
+
+	--color-primary-shadow: hsla(var(--color-primary-hsl), 0.75);
+}

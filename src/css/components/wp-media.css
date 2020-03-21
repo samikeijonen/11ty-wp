@@ -1,0 +1,17 @@
+.wp-smiley,
+.emoji {
+	background: none;
+	border: none;
+	box-shadow: none;
+	display: inline-block;
+	margin: 0 0.07em;
+	max-height: 1em;
+	padding: 0;
+	vertical-align: -0.1em;
+	width: 1em;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+	display: inline-block;
+}

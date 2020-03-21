@@ -1,0 +1,73 @@
+/* Colors and background colors. */
+.has-main-color {
+	color: var(--color-primary);
+}
+
+.has-main-background-color {
+	background-color: var(--color-primary);
+}
+
+.has-dark-color {
+	color: var(--color-primary-900);
+}
+
+.has-dark-background-color {
+	background-color: var(--color-primary-900);
+}
+
+.has-grey-100-color {
+	color: var(--color-grey-100);
+}
+
+.has-grey-100-background-color,
+.has-light-background-color {
+	background-color: var(--color-grey-100);
+}
+
+.has-grey-300-color {
+	color: var(--color-grey-300);
+}
+
+.has-grey-300-background-color {
+	background-color: var(--color-grey-300);
+}
+
+.has-grey-500-color,
+.has-grey-color {
+	color: var(--color-grey-500);
+}
+
+.has-grey-500-background-color,
+.has-grey-background-color {
+	background-color: var(--color-grey-500);
+}
+
+.has-grey-700-color {
+	color: var(--color-grey-700);
+}
+
+.has-grey-700-background-color {
+	background-color: var(--color-grey-700);
+}
+
+.has-white-color {
+	color: var(--color-white);
+}
+
+.has-white-background-color {
+	background-color: var(--color-white);
+}
+
+.has-light-color {
+	color: var(--color-primary-100);
+}
+
+.inherit-color {
+	color: inherit;
+}
+
+.inherit-hover-color:hover,
+.inherit-hover-color:focus,
+.inherit-hover-color:active {
+	color: inherit;
+}

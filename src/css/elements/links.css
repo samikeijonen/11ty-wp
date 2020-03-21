@@ -1,0 +1,19 @@
+a {
+	color: var(--color-primary-500);
+	transition: all var(--transition-duration-md) ease-in-out;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: var(--color-primary-900);
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}

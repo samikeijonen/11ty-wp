@@ -1,0 +1,5 @@
+/* Define default padding in here so that it can be overwritten later. */
+.has-background,
+[class$="background-color"] {
+	padding: var(--spacing-12x) var(--spacing-2x);
+}

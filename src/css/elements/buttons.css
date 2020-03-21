@@ -1,0 +1,25 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background-color: var(--color-primary);
+	border: none;
+	border-radius: 0;
+	color: var(--color-white);
+	font-weight: 500;
+	letter-spacing: var(--letter-spacing-md);
+	padding: calc(var(--spacing) * 1.5) calc(var(--spacing-2x) * 1.25);
+	text-transform: uppercase;
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: var(--color-primary-700);
+		color: var(--color-white);
+		outline-offset: -2px;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+}

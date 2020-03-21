@@ -1,0 +1,28 @@
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+address {
+	margin: 0 0 var(--spacing-4x);
+}
+
+abbr,
+abbr[title],
+acronym {
+	border-bottom: none;
+	cursor: help;
+	text-decoration: underline dotted;
+}
+
+mark,
+ins {
+	background-color: var(--color-primary-100);
+	text-decoration: none;
+}
+
+big {
+	font-size: 134%;
+}

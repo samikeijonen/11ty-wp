@@ -1,0 +1,24 @@
+.pagination--comments {
+	margin-bottom: var(--spacing-4x);
+}
+
+.pagination__items {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.pagination__item:not(:last-child) {
+	&::after {
+		content: "\002F";
+		padding: 0 var(--spacing-2x);
+	}
+}
+
+.pagination__anchor {
+	text-decoration: none;
+}
+
+.pagination__anchor[aria-current] {
+	color: var(--color-grey-700);
+	text-decoration: underline;
+}

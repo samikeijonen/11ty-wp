@@ -1,0 +1,22 @@
+.sidebar {
+	a {
+		color: inherit;
+	}
+}
+
+.widget {
+	font-size: var(--font-size-md);
+	margin-bottom: var(--spacing-4x);
+
+	@supports (grid-area: auto) {
+		margin-bottom: 0;
+	}
+
+	select {
+		max-width: 100%;
+	}
+}
+
+.widget :last-child {
+	margin-bottom: 0;
+}

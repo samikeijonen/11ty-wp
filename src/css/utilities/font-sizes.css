@@ -1,0 +1,17 @@
+/* Font sizes. */
+.has-small-font-size {
+	font-size: var(--font-size-sm);
+}
+
+.has-medium-font-size {
+	font-size: var(--font-size-xl);
+}
+
+.has-large-font-size {
+	font-size: var(--font-size-2xl);
+}
+
+.has-larger-font-size {
+	font-size: var(--font-size-3xl);
+	line-height: var(--line-height-sm);
+}

@@ -1,0 +1,32 @@
+{
+	"items": [
+		{
+			"text": "Etusivu",
+			"url": "/"
+		},
+		{
+			"text": "Tiedotteet",
+			"url": "/tiedotteet/"
+		},
+		{
+			"text": "Kirjahanke",
+			"url": "/kirjahanke/"
+		},
+		{
+			"text": "Hallitus",
+			"url": "/hallitus/"
+		},
+		{
+			"text": "Jäsenkirjeet",
+			"url": "/jasenkirjeet/"
+		},
+		{
+			"text": "Toimintakertomukset",
+			"url": "/toimintakertomukset/"
+		},
+		{
+			"text": "Toimintasuunnitelmat",
+			"url": "/toimintasuunnitelmat/"
+		}
+	]
+}

@@ -1,0 +1,14 @@
+.gallery {
+	margin-bottom: var(--spacing-4x);
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-caption {
+	display: block;
+}

@@ -1,0 +1,22 @@
+{% if navFooter.items %}
+  <nav class="nav nav--footer" aria-label="Alapalkki">
+    <ul class="nav__items nav__items--footer reset-list">
+      {% for item in navFooter.items %}
+        {% set relAttribute = '' %}
+        {% set currentAttribute = '' %}
+
+        {% if item.rel %}
+          {% set relAttribute = ' rel="' + item.rel + '"' %}
+        {% endif %}
+
+        {% if page.url == item.url %}
+          {% set currentAttribute = ' aria-current="page"' %}
+        {% endif %}
+
+        <li class="nav__item nav__item--footer">
+          <a class="nav__anchor nav__anchor--footer" href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}>{{ item.text }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+{% endif %}

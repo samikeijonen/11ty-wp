@@ -1,0 +1,27 @@
+.terms__wrapper {
+	color: var(--color-grey-500);
+	display: block;
+
+	+ .terms__wrapper {
+		margin-top: var(--spacing-2x);
+	}
+
+	.svg {
+		margin-right: var(--spacing-2x);
+	}
+
+	a {
+		color: var(--color-grey-500);
+		font-size: var(--font-size-md);
+		font-weight: 700;
+		text-decoration: none;
+		text-transform: capitalize;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: var(--color-primary-900);
+			text-decoration: underline;
+		}
+	}
+}

@@ -1,0 +1,20 @@
+html {
+	font-size: 100%;
+}
+
+body,
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: var(--color-grey-700);
+	font-family: var(--font-family-sans);
+	font-size: var(--font-size-body);
+	line-height: var(--line-height-md);
+	word-wrap: break-word;
+}
+
+body {
+	background-color: var(--color-grey-100);
+}

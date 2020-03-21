@@ -1,0 +1,21 @@
+.flow-spacing {
+	--flow-space: var(--spacing-4x);
+}
+
+.flow-spacing > * + * {
+	margin-bottom: 0;
+	margin-top: var(--flow-space);
+}
+
+.flow-spacing > h2,
+.flow-spacing > h3 {
+	--flow-space: calc(var(--spacing-4x) * 2);
+}
+
+.flow-spacing > h2 + p,
+.flow-spacing > h3 + p,
+.flow-spacing > h4 + p,
+.flow-spacing > h5 + p,
+.flow-spacing > h6 + p {
+	--flow-space: var(--spacing-3x);
+}

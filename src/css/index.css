@@ -1,0 +1,82 @@
+/**
+ * Main stylesheet for the theme.
+ *
+ * Theme styles follow http://cssguidelin.es/ and are organized according to
+ * Inverted Triangle CSS (ITCSS) principles put forth by Harry Roberts. In
+ * short, each layer of CSS gets more specific as you move down this page.
+ */
+
+/*--------------------------------------------------------------
+# Settings - Global variables, config switches.
+--------------------------------------------------------------*/
+@import "settings/media-queries.css"; /* Needs to come first, others are using it. */
+@import "settings/colors.css";
+/*@import "settings/fonts.css";*/
+@import "settings/max-width.css";
+@import "settings/spacing.css";
+@import "settings/transitions.css";
+@import "settings/typography.css";
+
+
+/*--------------------------------------------------------------
+# Generic - Ground-zero styles (resets, box-sizing, etc.).
+--------------------------------------------------------------*/
+@import "generic/reset.css";
+@import "generic/box-sizing.css";
+
+
+/*--------------------------------------------------------------
+# Elements - Unclassed HTML elements (type selectors).
+--------------------------------------------------------------*/
+@import "elements/page.css";
+@import "elements/blockquote.css";
+@import "elements/buttons.css";
+@import "elements/forms.css";
+@import "elements/headings.css";
+@import "elements/hr.css";
+@import "elements/links.css";
+@import "elements/lists.css";
+@import "elements/media.css";
+@import "elements/misc.css";
+@import "elements/paragraph.css";
+@import "elements/pre-code.css";
+@import "elements/tables.css";
+
+
+/*--------------------------------------------------------------
+# Objects - Undecorated design patterns.
+--------------------------------------------------------------*/
+@import "objects/animations.css";
+@import "objects/flow-spacing.css";
+@import "objects/layouts.css";
+@import "objects/max-widths.css";
+@import "objects/svg.css";
+
+
+/*--------------------------------------------------------------
+# Components - specific UI components.
+--------------------------------------------------------------*/
+@import "components/archive.css";
+@import "components/comments.css";
+@import "components/entry.css";
+@import "components/gallery.css";
+@import "components/nav.css";
+@import "components/pagination.css";
+@import "components/sidebar.css";
+@import "components/terms.css";
+@import "components/widget.css";
+@import "components/wp-media.css";
+
+
+/*--------------------------------------------------------------
+# Utilities - Helpers and overrides.
+--------------------------------------------------------------*/
+@import "utilities/accessibility.css";
+@import "utilities/alignment.css";
+@import "utilities/color-palette.css";
+@import "utilities/font-sizes.css";
+@import "utilities/helpers.css";
+@import "utilities/max-width.css";
+@import "utilities/prefers-reduced-motion.css";
+@import "utilities/spacing.css";
+@import "utilities/text.css";

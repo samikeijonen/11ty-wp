@@ -1,0 +1,36 @@
+.alignleft {
+	@media (--screen-md) {
+		float: left;
+		margin-bottom: var(--spacing-3x);
+		margin-left: calc(50% - var(--max-w-md) / 2);
+		margin-right: var(--spacing-3x);
+		max-width: 50%;
+	}
+}
+
+.alignright {
+	@media (--screen-md) {
+		float: right;
+		margin-bottom: var(--spacing-3x);
+		margin-left: var(--spacing-3x);
+		margin-right: calc(50% - var(--max-w-md) / 2);
+		max-width: 50%;
+	}
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignwide {
+	max-width: var(--max-w-lg);
+}
+
+.alignfull {
+	margin-left: calc(var(--spacing-2x) * -1);
+	margin-right: calc(var(--spacing-2x) * -1);
+	max-width: calc(100% + var(--spacing-4x));
+}

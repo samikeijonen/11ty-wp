@@ -1,0 +1,42 @@
+.decoration-none {
+	text-decoration: none;
+}
+
+.h-decoration-underline {
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: underline;
+	}
+}
+
+.font-serif {
+	font-family: var(--font-family-serif);
+}
+
+.font-sans {
+	font-family: var(--font-family-sans);
+}
+
+.fw-500 {
+	font-weight: 500;
+}
+
+.fw-700 {
+	font-weight: 700;
+}
+
+.font-size-md {
+	font-size: var(--font-size-md);
+}
+
+.block {
+	display: block;
+}
+
+.reset-list {
+	list-style-type: none;
+	margin-bottom: 0;
+	margin-left: 0;
+	padding-left: 0;
+}

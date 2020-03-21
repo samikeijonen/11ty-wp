@@ -1,0 +1,73 @@
+/* stylelint-disable font-family-name-quotes */
+/* stylelint-disable string-quotes */
+/* playfair-display-regular - latin */
+@font-face {
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local('Playfair Display Regular'),
+		local('PlayfairDisplay-Regular'),
+		url('../fonts/playfair-display-v14-latin-regular.woff2') format('woff2'),
+		url('../fonts/playfair-display-v14-latin-regular.woff') format('woff');
+}
+
+/* playfair-display-italic - latin */
+@font-face {
+	font-family: 'Playfair Display';
+	font-style: italic;
+	font-weight: 400;
+	src:
+		local('Playfair Display Italic'),
+		local('PlayfairDisplay-Italic'),
+		url('../fonts/playfair-display-v14-latin-italic.woff2') format('woff2'),
+		url('../fonts/playfair-display-v14-latin-italic.woff') format('woff');
+}
+
+/* playfair-display-700 - latin */
+@font-face {
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local('Playfair Display Bold'),
+		local('PlayfairDisplay-Bold'),
+		url('../fonts/playfair-display-v14-latin-700.woff2') format('woff2'),
+		url('../fonts/playfair-display-v14-latin-700.woff') format('woff');
+}
+
+/* playfair-display-700italic - latin */
+@font-face {
+	font-family: 'Playfair Display';
+	font-style: italic;
+	font-weight: 700;
+	src:
+		local('Playfair Display Bold Italic'),
+		local('PlayfairDisplay-BoldItalic'),
+		url('../fonts/playfair-display-v14-latin-700italic.woff2') format('woff2'),
+		url('../fonts/playfair-display-v14-latin-700italic.woff') format('woff');
+}
+
+/* playfair-display-900 - latin */
+@font-face {
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: 900;
+	src:
+		local('Playfair Display Black'),
+		local('PlayfairDisplay-Black'),
+		url('../fonts/playfair-display-v14-latin-900.woff2') format('woff2'),
+		url('../fonts/playfair-display-v14-latin-900.woff') format('woff');
+}
+
+/* playfair-display-900italic - latin */
+@font-face {
+	font-family: 'Playfair Display';
+	font-style: italic;
+	font-weight: 900;
+	src:
+		local('Playfair Display Black Italic'),
+		local('PlayfairDisplay-BlackItalic'),
+		url('../fonts/playfair-display-v14-latin-900italic.woff2') format('woff2'),
+		url('../fonts/playfair-display-v14-latin-900italic.woff') format('woff');
+}

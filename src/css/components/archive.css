@@ -1,0 +1,5 @@
+.archive-header__description {
+	& :last-child {
+		margin-bottom: 0;
+	}
+}

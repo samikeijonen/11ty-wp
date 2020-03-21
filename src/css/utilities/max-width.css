@@ -1,0 +1,15 @@
+.max-w-md {
+	max-width: var(--max-w-md);
+}
+
+.max-w-lg {
+	max-width: var(--max-w-lg);
+}
+
+.max-w-xl {
+	max-width: var(--max-w-xl);
+}
+
+.max-w-2xl {
+	max-width: var(--max-w-2xl);
+}

@@ -1,0 +1,16 @@
+:root {
+	--spacing-sm: 4px;
+	--spacing: 0.5rem;
+	--spacing-2x: 1rem;
+	--spacing-3x: 1.5rem;
+	--spacing-4x: 2rem;
+	--spacing-4x: 2rem;
+	--spacing-5x: 2.5rem;
+	--spacing-6x: 3rem;
+	--spacing-7x: 3.5rem;
+	--spacing-8x: 4rem;
+	--spacing-9x: 4.5rem;
+	--spacing-10x: 5rem;
+	--spacing-11x: 5.5rem;
+	--spacing-12x: 6rem;
+}
