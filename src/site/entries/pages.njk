@@ -3,7 +3,7 @@ pagination:
   data: pages
   size: 1
   alias: wpPage
-permalink: /{{ wpPage.slug }}/index.html
+permalink: "/{{ wpPage.link | urlPath }}/index.html"
 ---
 
 {% extends "layouts/base.njk" %}

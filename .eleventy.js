@@ -41,6 +41,12 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromISO(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
   });
 
+	// Get path from URL.
+  eleventyConfig.addFilter('urlPath', (fullUrl) => {
+		const url = new URL(fullUrl);
+    return url.pathname.replace(/\/+$/, '');
+  });
+
   // Copy all images directly to dist.
 	eleventyConfig.addPassthroughCopy({ "src/img": "img" });
 
