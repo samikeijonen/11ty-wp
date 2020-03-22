@@ -38,8 +38,8 @@
 		background-color: var(--color-primary);
 		content: "";
 		display: block;
-		width: calc(var(--spacing-2x) * 8);
 		height: var(--spacing-sm);
 		margin: var(--spacing-6x) auto var(--spacing-7x);
+		width: calc(var(--spacing-2x) * 8);
 	}
 }

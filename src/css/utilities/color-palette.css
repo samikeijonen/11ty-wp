@@ -3,7 +3,8 @@
 	color: var(--color-primary);
 }
 
-.has-main-background-color {
+.has-main-background-color,
+.has-accent-background-color {
 	background-color: var(--color-primary);
 }
 

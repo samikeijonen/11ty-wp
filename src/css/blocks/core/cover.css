@@ -11,17 +11,23 @@
 	&-text,
 	&__inner-container {
 		color: var(--color-white);
-		max-width: var(--max-width-2);
+		max-width: var(--max-w-md);
 		text-align: center;
 		z-index: 1;
 
 		.wp-block-paragraph {
-			font-size: var(--font-size-h3);
+			font-size: var(--font-size-xl);
 		}
 
 		a {
 			color: inherit;
 		}
+	}
+
+	& h2,
+	& h3,
+	& h4 {
+		color: inherit;
 	}
 
 	&.has-left-content {

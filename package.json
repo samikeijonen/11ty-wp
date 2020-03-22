@@ -15,7 +15,9 @@
     "clean": "rm -rf ./dist",
     "dev": "run-p dev:*",
     "dev:assets": "APP_ENV=development webpack --mode production --watch",
-    "dev:site": "APP_ENV=development eleventy --serve"
+		"dev:site": "APP_ENV=development eleventy --serve",
+		"lint:css": "stylelint './src/css/**/*.css'",
+		"lint:js": "eslint './src/js/**/*.js'"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.10.0",

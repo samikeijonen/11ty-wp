@@ -7,7 +7,7 @@ input[type="submit"] {
 	border-radius: 0;
 	color: var(--color-white);
 	display: inline-block;
-	font-weight: 700;
+	font-weight: 500;
 	padding: calc(var(--spacing-) * 1.5) calc(var(--spacing-2x) * 1.25);
 	text-decoration: none;
 	transition: all var(--transition-duration-1) ease-in-out;

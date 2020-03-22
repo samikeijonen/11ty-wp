@@ -38,7 +38,7 @@
 	border-radius: 0;
 	color: var(--color-white);
 	display: inline-block;
-	font-weight: 700;
+	font-weight: 500;
 	padding: calc(var(--spacing) * 1.5) calc(var(--spacing-2x) * 1.25);
 	text-decoration: none;
 
@@ -82,7 +82,6 @@
 
 .is-style-underlined .wp-block-button__link { /* stylelint-disable-line no-descending-specificity */
 	background-color: transparent;
-	border-bottom: 2px solid;
 	border-radius: 0;
 	color: var(--color-primary);
 	padding: 0;
