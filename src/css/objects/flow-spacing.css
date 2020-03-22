@@ -1,8 +1,10 @@
-.entry__content {
+.entry__content,
+.flow-spacing {
 	--flow-space: var(--spacing-4x);
 }
 
 .entry__content > * + *,
+.flow-spacing > * + *,
 .wp-block-group__inner-container > * + *,
 .wp-block-cover__inner-container > * + * {
 	margin-bottom: 0;

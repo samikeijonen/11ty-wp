@@ -25,7 +25,7 @@ select {
 	background-color: var(--color-white);
 	border: 2px solid var(--color-primary);
 	border-radius: 0;
-	padding: var(--spacing-);
+	padding: var(--spacing);
 	width: 100%;
 
 	&:focus {
@@ -36,6 +36,7 @@ select {
 }
 
 label {
+	color: var(--color-primary-900);
 	display: block;
-	font-weight: 700;
+	font-weight: 500;
 }

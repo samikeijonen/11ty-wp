@@ -21,3 +21,17 @@
 	background-color: var(--color-primary-100);
 	padding: var(--spacing-3x);
 }
+
+.is-style-success,
+.is-style-success.wp-block-paragraph {
+	background-color: var(--color-success-100);
+	border-left: var(--spacing-sm) solid var(--color-success-500);
+	padding: var(--spacing-3x);
+}
+
+.is-style-error,
+.is-style-error.wp-block-paragraph {
+	background-color: var(--color-error-100);
+	border-left: var(--spacing-sm) solid var(--color-error-500);
+	padding: var(--spacing-3x);
+}

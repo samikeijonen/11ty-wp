@@ -1,1 +1,3 @@
-console.log("Elevenpack javascript is loaded");
+import comment from './components/comment';
+
+comment();

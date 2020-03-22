@@ -1,5 +1,5 @@
 .animated {
-	animation-duration: var(--transition-duration-1);
+	animation-duration: var(--transition-duration-md);
 	animation-fill-mode: both;
 }
 

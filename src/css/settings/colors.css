@@ -6,10 +6,16 @@
 	--color-primary-900: hsl(var(--primary-hue), 82%, 7%);
 
 	--color-primary-shadow: hsla(var(--color-primary-hsl), 0.75);
-	--color-grey-80: hsla(0, 0%, 0%, 0.8);
-	--color-grey-70: hsla(0, 0%, 0%, 0.7);
-	--color-grey-60: hsla(0, 0%, 0%, 0.6);
 	--color-grey-10: hsla(0, 0%, 0%, 0.1);
+	--color-grey-60: hsla(0, 0%, 0%, 0.6);
+	--color-grey-70: hsla(0, 0%, 0%, 0.7);
+	--color-grey-80: hsla(0, 0%, 0%, 0.8);
+
+	--color-success-100: hsl(152, 68%, 96%);
+	--color-success-500: hsl(164, 71%, 34%);
+
+	--color-error-100: hsl(360, 100%, 97%);
+	--color-error-500: hsl(360, 67%, 44%);
 
 	--color-white: hsl(0, 0%, 100%);
 	--color-black: hsl(0, 0%, 0%);

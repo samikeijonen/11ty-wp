@@ -9,7 +9,7 @@ blockquote {
 	padding-left: var(--spacing-3x);
 
 	p {
-		font-size: var(--font-size-h3);
+		font-size: var(--font-size-xl);
 	}
 
 	p:last-of-type {

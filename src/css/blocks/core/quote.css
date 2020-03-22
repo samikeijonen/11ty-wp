@@ -8,7 +8,7 @@
 }
 
 .wp-block-quote.is-style-large p {
-	font-size: var(--font-size-h2);
+	font-size: var(--font-size-xl);
 }
 
 .wp-block-pullquote.is-style-solid-color {

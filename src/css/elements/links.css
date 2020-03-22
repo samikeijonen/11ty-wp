@@ -1,6 +1,6 @@
 a {
 	color: var(--color-primary);
-	transition: all var(--transition-duration-1) ease-in-out;
+	transition: all var(--transition-duration-md) ease-in-out;
 
 	&:hover,
 	&:focus,

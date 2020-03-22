@@ -9,6 +9,8 @@ permalink: "/{{ wpPage.link | urlPath }}/index.html"
 {% extends "layouts/base.njk" %}
 
 {% set title = wpPage.title.rendered %}
+{% set commentStatus = wpPage.comment_status %}
+{% set id = wpPage.id %}
 
 {% block pageTitle %}
 	<h1 class="entry__title">{{ title | safe }}</h1>
@@ -16,4 +18,10 @@ permalink: "/{{ wpPage.link | urlPath }}/index.html"
 
 {% block content %}
 	{{ wpPage.content.rendered | safe }}
+{% endblock %}
+
+{% block comments %}
+	{% if commentStatus === 'open' %}
+		{% include "components/comments.njk" %}
+	{% endif %}
 {% endblock %}

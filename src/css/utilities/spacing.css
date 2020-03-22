@@ -54,6 +54,14 @@
 	margin-top: var(--spacing-4x);
 }
 
+.mt-6 {
+	margin-top: var(--spacing-6x);
+}
+
+.mt-8 {
+	margin-top: var(--spacing-8x);
+}
+
 .mx-auto {
 	margin-left: auto;
 	margin-right: auto;

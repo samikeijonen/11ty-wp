@@ -1,6 +1,6 @@
 .wp-block-pullquote {
-	border-bottom: var(--spacingsmall) solid;
-	border-top: var(--spacingsmall) solid;
+	border-bottom: var(--spacing-sm) solid;
+	border-top: var(--spacing-sm) solid;
 	padding: var(--spacing-4x) 0;
 	text-align: center;
 
@@ -15,7 +15,7 @@
 		blockquote {
 			margin-left: auto;
 			margin-right: auto;
-			max-width: var(--max-width-2);
+			max-width: var(--max-w-xl);
 			padding-bottom: calc(var(--spacing-3x) * 2);
 			padding-top: calc(var(--spacing-3x) * 2);
 		}
@@ -24,10 +24,5 @@
 	&.alignfull {
 		padding-left: var(--spacing-2x);
 		padding-right: var(--spacing-2x);
-
-		p {
-			font-size: var(--font-size-h2);
-		}
 	}
-
 }
