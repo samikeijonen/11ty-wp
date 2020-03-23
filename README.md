@@ -1,4 +1,4 @@
-# Eleventu and WordPress
+# Eleventy and WordPress
 
 Test for using [Eleventy](https://www.11ty.dev/) as frontend and WordPress as backend.
 
