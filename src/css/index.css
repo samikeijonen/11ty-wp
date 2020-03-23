@@ -11,7 +11,7 @@
 --------------------------------------------------------------*/
 @import "settings/media-queries.css"; /* Needs to come first, others are using it. */
 @import "settings/colors.css";
-/*@import "settings/fonts.css";*/
+@import "settings/fonts.css";
 @import "settings/max-width.css";
 @import "settings/spacing.css";
 @import "settings/transitions.css";
