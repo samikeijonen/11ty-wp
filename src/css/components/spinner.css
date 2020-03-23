@@ -1,0 +1,22 @@
+.spinner.is-hidden {
+	display: none;
+}
+
+.spinner__circle {
+	animation: 2s linear spinning-circle infinite;
+	stroke: var(--color-white);
+}
+
+@keyframes spinning-circle {
+	0% {
+		stroke-dasharray: 150.6 100.4;
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dasharray: 1 250;
+	}
+	100% {
+		stroke-dasharray: 150.6 100.4;
+		stroke-dashoffset: 502;
+	}
+}

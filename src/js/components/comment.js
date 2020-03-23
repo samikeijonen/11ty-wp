@@ -16,6 +16,8 @@ const postComment = () => {
 
 	const endpoint = 'https://11ty.foxnet.fi/wp-json/wp/v2/comments';
 
+	const spinner = document.querySelector( '.js-spinner' );
+
 	/**
 	 * Handle comment form submit via REST API.
 	 *
@@ -23,6 +25,10 @@ const postComment = () => {
 	 * @param {string} className Class to use in message.
 	 */
 	function handleMessage( message, className = 'is-style-success' ) {
+		// Remove content from the form.
+		commentForm.innerHTML = '';
+
+		// Add custom message.
 		const messageContent = document.createElement( 'p' );
 		messageContent.classList.add( className );
 		messageContent.textContent = message;
@@ -40,6 +46,9 @@ const postComment = () => {
 	function handleSubmit( e ) {
 		// Prevent form submitting.
 		e.preventDefault();
+
+		// Show spinner.
+		spinner.classList.remove( 'is-hidden' );
 
 		// Get form elements.
 		const [ postId, comment, name, email, url ] = e.target.elements;
@@ -82,6 +91,8 @@ const postComment = () => {
 			} )
 			.then( ( responseObject ) => { /* eslint-disable-line */
 				// responseObject is the JSON from our response.
+				// Hide spinner.
+				spinner.classList.add( 'is-hidden' );
 			} )
 			.catch( ( error ) => {
 				handleMessage( 'Something went wrong! Can you try again.', 'is-style-error' );

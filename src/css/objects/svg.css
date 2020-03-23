@@ -1,4 +1,5 @@
-.svg {
+.svg,
+.wp-social-link svg {
 	display: inline-block;
 	fill: currentColor;
 	height: 1em;

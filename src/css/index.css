@@ -87,6 +87,7 @@
 @import "components/nav.css";
 @import "components/pagination.css";
 @import "components/sidebar.css";
+@import "components/spinner.css";
 @import "components/terms.css";
 @import "components/widget.css";
 @import "components/wp-media.css";
