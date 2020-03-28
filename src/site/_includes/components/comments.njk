@@ -1,12 +1,33 @@
-<section class="comments-template mx-auto max-w-md mt-8">
-	<div id="respond" class="comment-respond flow-spacing">
+<section class="comments-template mx-auto max-w-md">
+	{% if comments | length %}
+		<div class="comments flow-spacing mt-8" id="comments">
+			<h2 class="comments__title">Comments</h2>
+			<ol class="comments__list reset-list">
+				{%- for comment in comments | reverse -%}
+					{% if comment.post === id %}
+						<li>
+							<header class="comment__meta flex items-center font-size-1">
+								<img loading="lazy" alt="" src="{{ comment.author_avatar_urls['96'] }}" class="avatar avatar-120 photo comment__avatar" width="96" height="96">
+								<div class="comment__info has-medium-font-size">
+									<span class="comment__author fw-700 has-dark-color">{{ comment.author_name }}</span><br>
+									<time class="comment__date" datetime="{{ comment.date | htmlDateString }}">{{ comment.date | readableDate }}</time>
+								</div>
+							</header>
+							<div class="comment__content">{{ comment.content.rendered | safe }}</div>
+						</li>
+					{% endif %}
+				{%- endfor -%}
+			</ol>
+		</div>
+	{% endif %}
+	<div id="respond" class="comment-respond flow-spacing mt-8">
 		<h2 class="comment-respond__reply-title h3">Leave a Reply</h2>
 
 		<form method="post" id="commentform" class="comment-respond__form flow-spacing js-comment-respond-form">
 			<input type="hidden" id="postId" value={{ id }} />
 			<p class="comment-respond__notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
 			<p class="comment-respond__field comment-respond__field--comment">
-				<label for="comment">Comment</label>
+				<label for="comment">Comment <span class="required">*</span></label>
 				<textarea autocomplete="nope" id="comment" name="comment" required></textarea>
 			</p>
 
@@ -23,6 +44,11 @@
 			<p class="comment-respond__field comment-respond__field--url">
 				<label for="url">Website</label>
 				<input id="url" name="url" type="url" value="" size="30" maxlength="200">
+			</p>
+
+			<p class="comment-respond__field comment-respond__field--address" hidden>
+				<label for="address">Address</label>
+				<input id="address" name="address" type="text" value="" size="30" maxlength="200">
 			</p>
 
 			<p class="comment-respond__field comment-respond__field--submit">

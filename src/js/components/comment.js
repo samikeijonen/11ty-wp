@@ -51,10 +51,16 @@ const postComment = () => {
 		spinner.classList.remove( 'is-hidden' );
 
 		// Get form elements.
-		const [ postId, comment, name, email, url ] = e.target.elements;
+		const [ postId, comment, name, email, url, address ] = e.target.elements;
 
 		// Bail if required fields are not given.
 		if ( ! postId.value || ! name.value || ! email.value ) {
+			return;
+		}
+
+		// Bail if "address" is given (honeypot).
+		if ( address.value ) {
+			spinner.classList.add( 'is-hidden' );
 			return;
 		}
 

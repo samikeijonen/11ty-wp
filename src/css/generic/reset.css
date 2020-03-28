@@ -14,3 +14,7 @@ dl,
 dd {
 	margin: 0;
 }
+
+[hidden] {  /* stylelint-disable-line */
+	display: none;
+}

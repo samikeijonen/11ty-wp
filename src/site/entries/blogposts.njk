@@ -9,6 +9,8 @@ permalink: blog/{{ blogpost.slug }}/index.html
 {% extends "layouts/base.njk" %}
 
 {% set title = blogpost.title.rendered %}
+{% set commentStatus = blogpost.comment_status %}
+{% set id = blogpost.id %}
 
 {% block byline %}
 	<span class="entry__byline">
@@ -23,4 +25,10 @@ permalink: blog/{{ blogpost.slug }}/index.html
 
 {% block content %}
 	{{ blogpost.content.rendered | safe }}
+{% endblock %}
+
+{% block comments %}
+	{% if commentStatus === 'open' %}
+		{% include "components/comments.njk" %}
+	{% endif %}
 {% endblock %}
