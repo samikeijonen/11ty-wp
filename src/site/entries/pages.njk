@@ -21,7 +21,5 @@ permalink: "/{{ wpPage.link | urlPath }}/index.html"
 {% endblock %}
 
 {% block comments %}
-	{% if commentStatus === 'open' %}
-		{% include "components/comments.njk" %}
-	{% endif %}
+	{% include "components/comments.njk" %}
 {% endblock %}

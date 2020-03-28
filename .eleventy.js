@@ -47,6 +47,13 @@ module.exports = function(eleventyConfig) {
     return url.pathname.replace(/\/+$/, '');
   });
 
+	// Get post comments by ID.
+  eleventyConfig.addFilter('thisPostComments', (array, ID) => {
+		return array.filter( item => {
+			return item.post === ID;
+		});
+  });
+
   // Copy all images directly to dist.
 	eleventyConfig.addPassthroughCopy({ "src/img": "img" });
 
