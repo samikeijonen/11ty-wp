@@ -3,6 +3,14 @@
 	--flow-space: var(--spacing-4x);
 }
 
+.flow-spacing--sm {
+	--flow-space: var(--spacing-3x);
+}
+
+.flow-spacing--lg {
+	--flow-space: var(--spacing-6x);
+}
+
 .entry__content > * + *,
 .flow-spacing > * + *,
 .wp-block-group__inner-container > * + *,

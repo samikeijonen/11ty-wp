@@ -2,10 +2,10 @@
 	{% if comments | length %}
 		<div class="comments flow-spacing mt-8" id="comments">
 			<h2 class="comments__title">Comments</h2>
-			<ol class="comments__list reset-list">
+			<ol class="comments__list reset-list flow-spacing">
 				{%- for comment in comments | reverse -%}
 					{% if comment.post === id %}
-						<li>
+						<li class="flow-spacing flow-spacing--lg">
 							<header class="comment__meta flex items-center font-size-1">
 								<img loading="lazy" alt="" src="{{ comment.author_avatar_urls['96'] }}" class="avatar avatar-120 photo comment__avatar" width="96" height="96">
 								<div class="comment__info has-medium-font-size">
@@ -13,7 +13,7 @@
 									<time class="comment__date" datetime="{{ comment.date | htmlDateString }}">{{ comment.date | readableDate }}</time>
 								</div>
 							</header>
-							<div class="comment__content">{{ comment.content.rendered | safe }}</div>
+							<div class="comment__content flow-spacing flow-spacing--sm">{{ comment.content.rendered | safe }}</div>
 						</li>
 					{% endif %}
 				{%- endfor -%}

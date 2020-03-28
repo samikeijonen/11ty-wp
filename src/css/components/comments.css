@@ -26,9 +26,7 @@
 }
 
 .comment__meta {
-	margin-bottom: var(--spacing-4x);
-
-	a {
+	& a {
 		color: var(--color-primary-900);
 		text-decoration: none;
 
