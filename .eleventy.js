@@ -31,7 +31,7 @@ module.exports = function(eleventyConfig) {
 	});
 
 	// Readable date.
-	eleventyConfig.addFilter("readableDate", dateObj => {
+	eleventyConfig.addFilter("readableDate", (dateObj) => {
 		return DateTime.fromISO(dateObj, {zone: 'utc'}).toFormat("LLLL d, yyyy");
 	});
 
