@@ -54,6 +54,11 @@ module.exports = function(eleventyConfig) {
 		});
 	});
 
+	// A debug utility.
+	eleventyConfig.addFilter("dump", obj => {
+		return util.inspect(obj);
+	});
+
 	// Copy all images directly to dist.
 	eleventyConfig.addPassthroughCopy({ "src/img": "img" });
 
@@ -65,11 +70,6 @@ module.exports = function(eleventyConfig) {
 
 	// Reload the page every time the JS/CSS are changed.
 	eleventyConfig.setBrowserSyncConfig({ files: [manifestPath] });
-
-	// A debug utility.
-	eleventyConfig.addFilter("dump", obj => {
-		return util.inspect(obj);
-	});
 
 	return {
 		dir: {
