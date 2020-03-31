@@ -1,12 +1,15 @@
-const axios = require( 'axios' );
+const getNumPages = require( './../helpers/getNumPages.js' );
+const fetchAll = require( './../helpers/fetchAll.js' );
+
+const endPoint = 'https://11ty.foxnet.fi/wp-json/wp/v2/posts?per_page=100';
 
 module.exports = async function() {
-	// Get posts.
-	return axios.get( 'https://11ty.foxnet.fi/wp-json/wp/v2/posts?per_page=100' )
-		.then( function( response ) {
-			return response.data;
-		} )
-		.catch( function( error ) {
-			console.log( error ); /* eslint-disable-line */
-		} );
+	// Get number of pages.
+	const numPages = await getNumPages( endPoint );
+
+	// Fetch all.
+	const allPosts = fetchAll( numPages, endPoint );
+
+	// And return them.
+	return allPosts;
 };
