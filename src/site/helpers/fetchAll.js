@@ -14,7 +14,7 @@ module.exports = async function fetchAll( pages, endPoint ) {
 	await axios.all( allPages )
 		.then( function( response ) {
 			const postData = response.map( ( res ) => res.data );
-			allPosts = postData.flat();
+			allPosts = Array.from( postData ).flat();
 		} )
 		.catch( function( error ) {
 			console.log( error ); /* eslint-disable-line */
