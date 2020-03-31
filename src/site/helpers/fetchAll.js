@@ -12,10 +12,10 @@ module.exports = async function fetchAll( pages, endPoint ) {
 
 	// Fetch posts from all pages.
 	await axios.all( allPages )
-		.then( function( response ) {
-			const postData = response.map( ( res ) => res.data );
+		.then( axios.spread( function( ...responses ) {
+			const postData = responses.map( ( res ) => res.data );
 			allPosts = postData.flat();
-		} )
+		} ) )
 		.catch( function( error ) {
 			console.log( error ); /* eslint-disable-line */
 		} );
