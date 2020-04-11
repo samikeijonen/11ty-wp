@@ -7,7 +7,7 @@ const isDev = process.env.NODE_ENV === 'development';
 const baseFilename = isDev ? 'index' : 'index.[contenthash]';
 
 const buildMode = isDev ? 'development' : 'production';
-const sourceMap = isDev ? 'eval-source-map' : '(none)';
+const sourceMap = isDev ? 'inline-cheap-module-source-map' : '(none)';
 
 module.exports = {
 	mode: buildMode,
@@ -29,6 +29,8 @@ module.exports = {
 					loader: 'babel-loader',
 					options: {
 						presets: ['@babel/preset-env'],
+						cacheDirectory: true,
+						sourceMap: isDev,
 					},
 				},
 			},
@@ -41,12 +43,16 @@ module.exports = {
 					{
 						loader: 'css-loader',
 						options: {
+							sourceMap: isDev,
 							// We copy fonts etc. using Eleventy.
 							url: false,
 						},
 					},
 					{
 						loader: 'postcss-loader',
+						options: {
+							sourceMap: isDev,
+						},
 					},
 				],
 			},
