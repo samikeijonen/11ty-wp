@@ -1,5 +1,5 @@
 module.exports = {
-	"extends": [ "plugin:@wordpress/eslint-plugin/esnext" ],
+	"extends": [ "@10up/eslint-config" ],
 	"parserOptions": {
 		"ecmaVersion": 2017
 	},

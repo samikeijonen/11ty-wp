@@ -36,13 +36,24 @@
 		"webpack-manifest-plugin": "^2.2.0"
 	},
 	"devDependencies": {
+		"@10up/eslint-config": "^2.0.3-next",
 		"@foxland/stylelint-config": "^1.2.0",
 		"@wordpress/eslint-plugin": "^4.1.0",
 		"axios": "^0.19.2",
 		"eslint": "^6.8.0",
+		"eslint-config-airbnb": "^18.1.0",
+		"eslint-config-airbnb-base": "^14.1.0",
+		"eslint-config-prettier": "^6.10.1",
+		"eslint-plugin-import": "^2.20.2",
+		"eslint-plugin-jsdoc": "^22.1.0",
+		"eslint-plugin-jsx-a11y": "^6.2.3",
+		"eslint-plugin-prettier": "^3.1.2",
+		"eslint-plugin-react": "^7.19.0",
+		"eslint-plugin-react-hooks": "^2.5.0",
 		"luxon": "^1.23.0",
 		"postcss-import": "^12.0.1",
 		"postcss-nested": "^4.2.1",
-		"postcss-preset-env": "^6.7.0"
+		"postcss-preset-env": "^6.7.0",
+		"prettier": "^2.0.4"
 	}
 }
