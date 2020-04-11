@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const { DateTime } = require("luxon");
 
-const isDev = process.env.APP_ENV === "development";
+const isDev = process.env.NODE_ENV === "development";
 
 const manifestPath = path.resolve(__dirname, "dist", "assets", "manifest.json");
 const manifest = isDev

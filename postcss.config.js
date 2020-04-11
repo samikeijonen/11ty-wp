@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = ({ env }) => ({
 	plugins: {
 		'postcss-import': {},
 		'postcss-preset-env': {
@@ -9,6 +9,12 @@ module.exports = {
 		},
 		'postcss-nested': {},
 		autoprefixer: {},
-		cssnano: {},
+		// Minify styles on production using cssano.
+		cssnano:
+			env === 'production'
+				? {
+						preset: ['default', { discardComments: { removeAll: true } }],
+				  }
+				: false,
 	},
-};
+});

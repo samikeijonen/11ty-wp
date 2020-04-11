@@ -27,6 +27,7 @@
 		font-weight: 700;
 		height: auto;
 		left: var(--spacing-2x);
+		outline-offset: -2px;
 		padding: var(--spacing-2x) var(--spacing-3x);
 		text-decoration: none;
 		top: var(--spacing-2x);
