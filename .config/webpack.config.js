@@ -36,7 +36,7 @@ module.exports = {
 			filename: `${baseFilename}.css`,
 			chunkFilename: '[id].css',
 		} ),
-		// Use ManifestPlugin on prod and dev just in case.
+		// Use ManifestPlugin on prod and dev.
 		plugins.manifest(),
 	],
 };
