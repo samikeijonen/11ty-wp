@@ -10,11 +10,11 @@
 	},
 	"scripts": {
 		"build": "run-s clean build:assets build:site",
-		"build:assets": "cross-env NODE_ENV=production webpack --mode production --config=.config/webpack.config.js",
+		"build:assets": "cross-env NODE_ENV=production webpack --mode production",
 		"build:site": "cross-env NODE_ENV=production eleventy",
 		"clean": "rm -rf ./dist",
 		"dev": "run-p dev:*",
-		"dev:assets": "cross-env NODE_ENV=development webpack --watch --config=.config/webpack.config.js",
+		"dev:assets": "cross-env NODE_ENV=development webpack --watch",
 		"dev:site": "cross-env NODE_ENV=development eleventy --serve",
 		"lint:css": "stylelint './src/css/**/*.css'",
 		"lint:js": "eslint './src/js/**/*.js'"

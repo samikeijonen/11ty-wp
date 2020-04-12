@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const isDev = process.env.NODE_ENV === 'development';
 
-const baseFilename = isDev ? 'index' : 'index.[contenthash]';
+const baseFilename = isDev ? '[name]' : '[name].[contenthash]';
 
 const buildMode = isDev ? 'development' : 'production';
 const sourceMap = isDev ? 'inline-cheap-module-source-map' : '(none)';
@@ -14,7 +14,7 @@ module.exports = {
 	devtool: sourceMap,
 	entry: [
 		path.resolve(__dirname, 'src', 'js', 'index.js'),
-		path.resolve(__dirname, 'src', 'css', 'index.css'),
+		path.resolve(__dirname, 'src', 'css', 'main.css'),
 	],
 	output: {
 		path: path.resolve(__dirname, 'dist', 'assets'),
