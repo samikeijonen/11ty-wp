@@ -8,7 +8,7 @@ const manifestPath = path.resolve(__dirname, "dist", "assets", "manifest.json");
 const manifest = isDev
 	? {
 		"main.js": "/assets/index.js",
-		"main.css": "/assets/index.css",
+		"main.css": "/assets/main.css",
 	}
 	: JSON.parse(fs.readFileSync(manifestPath, { encoding: "utf8" }));
 
