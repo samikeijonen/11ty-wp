@@ -37,6 +37,6 @@ module.exports = {
 			chunkFilename: '[id].css',
 		} ),
 		// Use ManifestPlugin on prod and dev.
-		plugins.manifest(),
+		plugins.manifest({ publicPath: '/assets/' }),
 	],
 };
