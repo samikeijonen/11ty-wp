@@ -7,7 +7,7 @@ const isDev = process.env.NODE_ENV === "development";
 const manifestPath = path.resolve(__dirname, "dist", "assets", "manifest.json");
 const manifest = isDev
 	? {
-		"main.js": "/assets/index.js",
+		"index.js": "/assets/index.js",
 		"main.css": "/assets/main.css",
 	}
 	: JSON.parse(fs.readFileSync(manifestPath, { encoding: "utf8" }));
@@ -25,8 +25,8 @@ module.exports = function(eleventyConfig) {
 
 	// Adds a universal shortcode to embed bundled JS. In Nunjack templates: {% bundledJs %}
 	eleventyConfig.addShortcode("bundledJs", function() {
-	return manifest["main.js"]
-		? `<script src="${manifest["main.js"]}"></script>`
+	return manifest["index.js"]
+		? `<script src="${manifest["index.js"]}"></script>`
 		: "";
 	});
 

@@ -10,11 +10,11 @@
 	},
 	"scripts": {
 		"build": "run-s clean build:assets build:site",
-		"build:assets": "cross-env NODE_ENV=production webpack --mode production",
+		"build:assets": "cross-env NODE_ENV=production webpack --mode production --config=.config/webpack.config.js",
 		"build:site": "cross-env NODE_ENV=production eleventy",
 		"clean": "rm -rf ./dist",
 		"dev": "run-p dev:*",
-		"dev:assets": "cross-env NODE_ENV=development webpack --watch",
+		"dev:assets": "cross-env NODE_ENV=development webpack --watch --config=.config/webpack.config.js",
 		"dev:site": "cross-env NODE_ENV=development eleventy --serve",
 		"lint:css": "stylelint './src/css/**/*.css'",
 		"lint:js": "eslint './src/js/**/*.js'"
@@ -38,7 +38,7 @@
 	"devDependencies": {
 		"@10up/eslint-config": "^2.0.3-next",
 		"@foxland/stylelint-config": "^1.2.0",
-		"@humanmade/webpack-helpers": "file:../npm/webpack-helpers",
+		"@humanmade/webpack-helpers": "^0.7.1",
 		"@wordpress/eslint-plugin": "^4.1.0",
 		"axios": "^0.19.2",
 		"cross-env": "^7.0.2",
