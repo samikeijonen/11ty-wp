@@ -11,6 +11,10 @@
 		{
 			"text": "About",
 			"url": "/about/"
+		},
+		{
+			"text": "Accessibility",
+			"url": "/accessibility/"
 		}
 	]
 }
