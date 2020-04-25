@@ -38,7 +38,7 @@
 		"webpack-manifest-plugin": "^2.2.0"
 	},
 	"devDependencies": {
-		"@10up/eslint-config": "^2.0.3-next",
+		"@10up/eslint-config": "^2.0.0",
 		"@foxland/stylelint-config": "^1.2.0",
 		"@foxland/webpack-tiny-helpers": "^1.0.3",
 		"@wordpress/eslint-plugin": "^4.1.0",
