@@ -1,7 +1,3 @@
-/**
- * .config/webpack.config.prod.js :
- * This file defines the production build configuration
- */
 const { helpers, loaders, plugins, presets } = require( '@foxland/webpack-tiny-helpers' );
 const { filePath } = helpers;
 
