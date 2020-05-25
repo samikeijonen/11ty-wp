@@ -5,20 +5,30 @@
 .pagination__items {
 	display: flex;
 	flex-wrap: wrap;
-}
-
-.pagination__item:not(:last-child) {
-	&::after {
-		content: "\002F";
-		padding: 0 var(--spacing-2x);
-	}
+	justify-content: center;
 }
 
 .pagination__anchor {
+	background-color: var(--color-primary-200);
+	color: var(--color-grey-80);
+	margin-right: var(--spacing);
+	margin-top: var(--spacing);
+	padding: var(--spacing) var(--spacing-2x);
 	text-decoration: none;
+
+	&:hover,
+	&:focus,
+	&:active,
+	&[aria-current] {
+		background-color: var(--color-grey-80);
+		color: var(--color-white);
+	}
+
+	&:focus {
+		outline-offset: -2px;
+	}
 }
 
 .pagination__anchor[aria-current] {
-	color: var(--color-grey-700);
 	text-decoration: underline;
 }

@@ -43,3 +43,26 @@
 		width: calc(var(--spacing-2x) * 8);
 	}
 }
+
+.entry__terms-item {
+	margin-right: var(--spacing-2x);
+	margin-top: var(--spacing-2x);
+}
+
+.entry__terms-anchor {
+	background-color: var(--color-primary-200);
+	border-radius: 2px;
+	color: var(--color-grey-900);
+	padding: var(--spacing-sm) var(--spacing-2x);
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: var(--color-grey-80);
+		color: var(--color-white);
+	}
+
+	&:focus {
+		outline-offset: -2px;
+	}
+}

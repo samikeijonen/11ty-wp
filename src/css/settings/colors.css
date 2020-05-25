@@ -3,6 +3,7 @@
 	--color-primary-hsl: var(--primary-hue), 80%, 43%;
 	--color-primary: hsl(var(--color-primary-hsl));
 	--color-primary-100: hsl(var(--primary-hue), 20%, 97%);
+	--color-primary-200: hsl(var(--primary-hue), 35%, 95%);
 	--color-primary-900: hsl(var(--primary-hue), 82%, 7%);
 
 	--color-primary-shadow: hsla(var(--color-primary-hsl), 0.75);

@@ -7,20 +7,16 @@ pagination:
 ---
 
 {% block content %}
-	<ul>
-		{%- for post in pagination.items -%}
-			<li>
-				<a href="/blog/{{ post.slug }}" class="postlist-link">{% if post.title.rendered %}{{ post.title.rendered }}{% else %}{{ post.slug }}{% endif %}</a>
-			</li>
-		{%- endfor -%}
-	</ul>
+	{% set allArticles = pagination.items %}
+
+	{% include "components/entry-archive.njk" %}
 
 	{% if pagination.pages.length > 1 %}
-		<nav class="pagination" aria-label="Newer and older articles">
+		<nav class="pagination mt-8" aria-label="Newer and older articles">
 			<ol class="pagination__items reset-list">
 				{%- for pageEntry in pagination.pages %}
 					<li class="pagination__item">
-						<a class="pagination__anchor" href="{{ pagination.hrefs[ loop.index - 1 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>Page {{ loop.index }}</a>
+						<a class="pagination__anchor fw-600 block" href="{{ pagination.hrefs[ loop.index - 1 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}><span class="screen-reader-text">Page</span> {{ loop.index }}</a>
 					</li>
 				{%- endfor %}
 			</ol>

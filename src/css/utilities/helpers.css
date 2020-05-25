@@ -22,6 +22,10 @@
 	font-weight: 500;
 }
 
+.fw-600 {
+	font-weight: 600;
+}
+
 .fw-700 {
 	font-weight: 700;
 }
@@ -32,11 +36,4 @@
 
 .block {
 	display: block;
-}
-
-.reset-list {
-	list-style-type: none;
-	margin-bottom: 0;
-	margin-left: 0;
-	padding-left: 0;
 }
