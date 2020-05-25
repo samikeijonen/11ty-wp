@@ -1,0 +1,5 @@
+{% set termSlug = "tag" %}
+{% set allTags = tags %}
+{% set terms = allTags | thisPostTags(blogpost.tags) %}
+
+{% include "components/entry-terms.njk" %}

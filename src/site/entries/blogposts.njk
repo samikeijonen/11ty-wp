@@ -27,6 +27,16 @@ permalink: blog/{{ blogpost.slug }}/index.html
 	{{ blogpost.content.rendered | safe }}
 {% endblock %}
 
+{% block contentFooter %}
+	<div class="entry__footer flow-spacing">
+		<p class="font-sans font-bold has-md-font-size mb-0">Categories:</p>
+		{% include "components/categories.njk" %}
+
+		<p class="font-sans font-bold has-md-font-size mb-0">Tags:</p>
+		{% include "components/tags.njk" %}
+	</div>
+{% endblock %}
+
 {% block comments %}
 	{% include "components/comments.njk" %}
 {% endblock %}

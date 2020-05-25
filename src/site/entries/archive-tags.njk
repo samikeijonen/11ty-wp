@@ -1,0 +1,20 @@
+---
+pagination:
+  data: tags
+  size: 1
+permalink: "/tag/{{ tags[pagination.pageNumber].slug }}/index.html"
+---
+
+{% extends "layouts/base.njk" %}
+
+{% set title = tags[pagination.pageNumber].name %}
+
+{% set allArticles = posts | postsByTagId(tags[pagination.pageNumber].id) %}
+
+{% block pageTitle %}
+	<h1 class="entry__title">Tag: {{ title | safe }}</h1>
+{% endblock %}
+
+{% block content %}
+	{% include "components/entry-archive.njk" %}
+{% endblock %}

@@ -1,0 +1,9 @@
+{% if terms | length %}
+	<ul class="entry__terms entry__terms--{{ termSlug }} reset-list flex flex-wrap mt-0">
+		{%- for term in terms -%}
+			<li class="entry__terms-item">
+				<a class="entry__terms-anchor no-underline font-sans font-bold has-sm-font-size block" href="/{{ termSlug }}/{{ term.slug }}">{{ term.name }}</a>
+			</li>
+		{%- endfor -%}
+	</ul>
+{% endif %}

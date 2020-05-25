@@ -1,0 +1,20 @@
+---
+pagination:
+  data: categories
+  size: 1
+permalink: "/category/{{ categories[pagination.pageNumber].slug }}/index.html"
+---
+
+{% extends "layouts/base.njk" %}
+
+{% set title = categories[pagination.pageNumber].name %}
+
+{% set allArticles = posts | postsByCategoryId(categories[pagination.pageNumber].id) %}
+
+{% block pageTitle %}
+	<h1 class="entry__title">Category: {{ title | safe }}</h1>
+{% endblock %}
+
+{% block content %}
+	{% include "components/entry-archive.njk" %}
+{% endblock %}

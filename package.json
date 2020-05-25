@@ -20,10 +20,10 @@
 		"lint:js": "eslint './src/js/**/*.js'"
 	},
 	"dependencies": {
-		"@11ty/eleventy": "^0.10.0",
+		"@11ty/eleventy": "^0.11.0",
 		"@babel/core": "^7.9.0",
-		"@babel/preset-env": "^7.9.5",
-		"@wordpress/a11y": "^2.8.0",
+		"@babel/preset-env": "^7.9.6",
+		"@wordpress/a11y": "^2.9.0",
 		"autoprefixer": "^9.7.6",
 		"axios": "^0.19.2",
 		"babel-loader": "^8.1.0",

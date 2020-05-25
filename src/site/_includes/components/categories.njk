@@ -1,0 +1,5 @@
+{% set termSlug = "category" %}
+{% set allCategories = categories %}
+{% set terms = allCategories | thisPostCategories(blogpost.categories) %}
+
+{% include "components/entry-terms.njk" %}
