@@ -47,6 +47,13 @@ module.exports = function(eleventyConfig) {
 		return url.pathname.replace(/\/+$/, '');
 	});
 
+	// Get post author by ID.
+	eleventyConfig.addFilter('thisPostAuthor', (array, ID) => {
+		return array.filter( user => {
+			return user.id === ID;
+		});
+	});
+
 	// Get post comments by ID.
 	eleventyConfig.addFilter('thisPostComments', (array, ID) => {
 		return array.filter( item => {
